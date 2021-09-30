@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WUD</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        h1,
+          label {
+                   font: 3rem 'Fira Sans', sans-serif;
+                   text-align: center;
+        }
+
+        input {
+               margin: .4rem;
+        }
+        .container{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>{% block heading %} {% endblock %}</h1>
+    
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
