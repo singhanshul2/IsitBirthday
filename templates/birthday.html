@@ -1,13 +1,19 @@
 {% extends "layout.html" %}
 
-{% block heading %} 
-    <h1>Many many happy returns of the day, {{ name }}</h1>
-
-    {% endblock %}
+{% block heading %}
 
 
-    {% block body %} 
+{% endblock heading%}
 
 
-    <img src="https://source.unsplash.com/1600x900/?happy birthday" alt="" style="align-self: center;">
-    {% endblock %}
+{% block body %}
+<div>
+    <h1> Many many happy returns of the day, {{ name }} </h1>
+</div>
+<div style="text-align: center;">
+    <a href="/"> <button class="btn btn-primary mb-4" type="button">Go back</button> </a>
+</div>
+<div class="container-fluid" style="display: flex; justify-content: center;">
+    <img src="https://source.unsplash.com/1600x900/?happy birthday" class="img-fluid" alt="" style="width:auto">
+</div>
+{% endblock body%}

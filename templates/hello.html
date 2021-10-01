@@ -1,17 +1,21 @@
 {% extends "layout.html" %}
 
-{% block heading %} 
-    <h1>Nice to hear that</h1>
+{% block heading %}
+<h1>Nice to hear that</h1>
 
-    {% endblock %}
+{% endblock heading%}
 
 
-    {% block body %} 
-    <div class="container">
-        <form action="{{ url_for('birthday') }}" method="post">
-            <input type="text" name="name" maxlength = "30" placeholder="Enter your name" style="padding-top: 6px; padding-bottom: 6px;">
-            <button class="btn btn-primary" type="submit" style="width: auto;">Submit</button>
-        </form>
-    <img src="https://source.unsplash.com/1600x900/?happy" alt="" style="align-self: center;">
-    </div>
-    {% endblock %}
+{% block body %}
+<div class="container">
+    <form action="{{ url_for('birthday') }}" method="post">
+        <input type="text" name="name" maxlength="30" placeholder="Enter your name"
+            style="padding-top: 6px; padding-bottom: 6px;">
+        <button class="btn btn-primary" type="submit" style="width: auto;">Submit</button>
+    </form>
+
+</div>
+<div class="container-fluid" style="display: flex; justify-content: center;">
+    <img src="https://source.unsplash.com/1600x900/?happy" class="img-fluid" alt="" style="width: auto;">
+</div>
+{% endblock body%}

@@ -2,7 +2,7 @@
 
 {% block heading %} 
     <h1>Is it your birthday today?</h1>
-{% endblock %}
+{% endblock heading%}
 
 
 {% block body %}   
@@ -15,7 +15,7 @@
     </form>
 </div>
 
-<div class="con">
-    <img src="https://source.unsplash.com/1600x900/?birthday question" alt="" style="align-self: center;">
+<div class="container-fluid" style="display: flex; justify-content: center;">
+    <img src="https://source.unsplash.com/1600x900/?birthday question" class="img-fluid" alt="" style="width: auto;">
 </div>
-{% endblock %}
+{% endblock body%}

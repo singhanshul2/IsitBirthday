@@ -25,6 +25,7 @@ def hello():
 @app.route("/birthday", methods = ["POST"])
 def birthday(): 
     name = request.form.get("name")
+    name = name.capitalize()
     return render_template("birthday.html", name=name)    
 
 @app.route("/test", methods = ["POST"])
